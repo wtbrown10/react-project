@@ -24,3 +24,11 @@ body {
   padding: 10px 10px;
   background: #3568b4;
 }
+.rent-room-body {
+  padding: 10px 10px;
+  text-align: center;
+  background: #3568b4
+}
+.list {
+  padding: 5px 5px;
+}

@@ -6,8 +6,12 @@ export const RoomContext = createContext()
 export const RoomContextProvider = ({children}) => {
 
     const currentLocalStorage = localStorage.getItem(`hotel-rooms`)
-    const initalState = currentLocalStorage === null ? roomCreator(4,4) : JSON.parse(currentLocalStorage)
-    const [room, setRoom] = useState(initalState)
+    const initialState = currentLocalStorage === null ? roomCreator(4,4) : JSON.parse(currentLocalStorage)
+    const [room, setRoom] = useState(initialState)
+
+    const rentRoom = () => {
+        return room
+    }
 
     useEffect(() => {
         localStorage.setItem('hotel-rooms', JSON.stringify(room) )
