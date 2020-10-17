@@ -41,7 +41,7 @@ return (
                 {arr.filter(elm => elm.renter == null).map(arrs => {
                     return  <li className='list'>Room {arrs.room} available for ${arrs.price}/Day 
                                 <button id={arrs.room} onClick={rentRoom}>
-                                    Rent Room
+                                    Rent Room!
                                 </button>
                             </li>
                 })}
