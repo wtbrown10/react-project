@@ -33,7 +33,7 @@ const returnRoom = (e) => {
 
     return (
         <div>
-            <h1>Return Rooms here!</h1>
+            <h1>Return Rooms here!!</h1>
             <input id='returnRenterName' type='text' placeholder='Enter Name'></input>
             <br/>
     <p>Rented Rooms</p>
